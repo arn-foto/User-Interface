@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -47,125 +47,189 @@ table {
 	border-spacing: 0;
 }
 
-/* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	height: 100%;
+	font-family: 'arial', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+	font-family: 'arial', cursive;
+	letter-spacing: 10px;
+	margin-bottom: 15px;
+  padding: 20px;
 }
 
+
 /* Your code starts here! */
+body{
+	background-color: white;
+	color: teal;
+}
 
-<!doctype html>
+body:hover{
+	background-color: none;
+	color: black;
+}
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+.container{
+	width: auto;
+	margin: auto;
+	padding: auto;
+}
 
-  <title>Great Idea!</title>
+.container header{
+	width: auto;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-top: 10%;
+  color: blue; 
+}
 
-  <link href="https://fonts.googleapis.com/css?family=Hind+Madurai|Press+Start+2P&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="css/index.css">
+.container header nav{
+	background-color: pink;
+  transition: 0.8s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.9);
+	position: auto; 
+}
 
-  <!--[if lt IE 9]>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+.container header nav:hover{
+	background-color: grey;
+}
 
-<body>
+.container header nav a{ 
+	color: white;
+	text-decoration: none;
+	display:inline-block;
+	margin: 20px;
+  padding: 20px;
+  margin: 20px;
+  font-size: 10px;
+  text-align: center;
+  word-spacing: 20px;
+  opacity: 1;
+  transition: 0.8s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
 
-<div class="container">
+.container header nav a:hover{
+	color: pink;
+  opacity: 1;
+  transition: 0.8s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.9);
+}
 
- 
-  <header>
-    <nav>
-      <a href="#">Services</a>
-      <a href="#">Product</a>
-      <a href="#">Vision</a>
-      <a href="#">Features</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <img class="logo" src="img/logo.png" alt="Company logo.">
-    </nav>
-  </header>
+.container header nav .logo{
+	background-color: white;
+	padding:20px;
+	margin-left: auto;
+}
 
- 
-  <section class="marketing-banner">
+section.marketing-banner{
+	border-bottom: 10px solid pink;
+	padding-bottom: 50px;
+	margin: 24px 0;
+}
+
+section div.innovation{
+	width:50%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	height: 100%;
+	padding: 40px;
+	margin-right: auto;
+}
+
+div.innovation h1 span{
+	font-size: 50px;
+	display:block;
+}
+
+div.innovation h1 span:hover {
+	font-size: 50px;
+  color: dodgerblue;
+	display:block;
+}
+
+div.innovation button{
+	width: 160px;
+	padding: 4px;
+  color: dodgerblue;
+}
+
+div.innovation button:hover{
+	width: 160px;
+	padding: 4px;
+  color: black;
+  opacity: 1;
+  transition: 0.8s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.9);
+}
+
+section .header-image{
+	width: 35%;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+section.content-top{
+	width: 100%;
+	padding: 20px;
+}
+
+section div p{
+	color: purple;
+	line-height: auto;
+}
+
+section div p:hover{
+  opacity: 1;
+  transition: 0.8s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.9);
+}
+section.content-top div{
+	width: 47%;
+	display: inline-block;
+}
+
+section.content-top div:first-child{
+	margin-right: 40px;
+}
+
+.mid-page-accent{
+	width: 100%;
+	border-radius: 40%;
+}
+
+section.content-bottom{
+	width: 100%;
+	border-bottom:10px solid pink;
+	padding-bottom: 50px
+}
+
+section.content-bottom div{
+	width: 30%;
+	margin-right: 20px;
+	display: inline-block;
+	padding: 20px; 
+}
+
+section.content-bottom div:hover{
+color: black;
+  {
     
-    <div class="innovation">
-      <h1>
-        <span>Innovation</span>
-        <span>On</span>
-        <span>Demand</span>
-      </h1>
-      
-      <button onclick="window.location='https://www.google.com';">Get Started</button>
-    </div>
-    <img class="header-img" src="img/header-img.png" alt="Image goes here.">
-  </section>
+section.content-bottom div:last-child{
+	margin-right: 40px;
+}
 
-  <main>
-   
-    <section class="content-top">
-      
-      <div class="feature">
-        
-        
-        <h2>Features</h2>
-        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-        </p>
-      </div>
-      
-      <div  class="about">
-        
-        <h2>About</h2>
-        
-        <p> Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-        </p>
-      </div>
-    </section>
-   
-    <img class="mid-page-accent" src="img/mid-page-accent.jpg" alt="image goes here">
-   
-    <section class="content-bottom">
-      <div>
-        <h2>Services</h2>
-        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-        </p>
-      </div>
-      
-      <div>
-        <h2>Product</h2>
-        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-        </p>
-      </div>
-     
-      <div>
-        <h2>Vision</h2>
-        <p>Aliquam elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.
-        </p>
-     
-      </div>
-    </section>
-  </main>
-  
-  <footer>
-      Contact<br>
-        123 Way 456 Street<br>
-          Somewhere, USA<br>
-        1 (888) 888-8888<br>
-        <a href="#">sales@greatidea.io</a><br> 
-    Copyright Great Idea! 2018
-  </footer>
+section.content-bottom div p{
+	text-align: justify;
+	display: inline-block;
+}
 
-</body>
-</html>
